@@ -39,21 +39,29 @@ public class Main {
 //        System.out.print(" is ");
 //        System.out.println(dayName);
 //    }
-
-
-    public static void main(String[] args) {
-        int i=1;
-
-        while (i<=50) {
-            if (i%2 == 0){
-                System.out.print(" even ");
-            }
-            else{
-                System.out.print(i);
-            }
-            i++;
+public static void main(String[] args) {
+    for (int i = 1; i <=50;i++){
+        if (i%15 == 0){
+            break;
         }
+        System.out.print(" ");
+        System.out.print( i );
     }
+}
+
+//    public static void main(String[] args) {
+//        int i=1;
+//
+//        while (i<=50) {
+//            if (i%2 == 0){
+//                System.out.print(" even ");
+//            }
+//            else{
+//                System.out.print(i);
+//            }
+//            i++;
+//        }
+//    }
 }
 
 

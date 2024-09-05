@@ -1,23 +1,30 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static final float phi = 3.14f ;
-    static float r,l1,l2;
-
-    static float luas( float r) {
-        float l =r*r*phi;
-        return l;
-    }
+//    static final float phi = 3.14f ;
+//    static float r,l1,l2;
+//
+//    static float luas( float r) {
+//        float l =r*r*phi;
+//        return l;
+//    }
 
     public static void main(String[] args) {
+        int a = 1;
 
-        r=10f;
-        l1=luas(r);
-        r= 15f;
-        l2=luas(r);
-
-        System.out.println(l1);
-        System.out.println(l2);
+        if (a%2== 0) {
+            System.out.println("even");
+        }
+        else {
+            System.out.println("odd");
+        }
+//        r=10f;
+//        l1=luas(r);
+//        r= 15f;
+//        l2=luas(r);
+//
+//        System.out.println(l1);
+//        System.out.println(l2);
 //        int num1;
 //        long num2;
 //        float num3;

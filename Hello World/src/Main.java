@@ -12,9 +12,7 @@ public class Main {
 //
     static void checkNum(int a){
 
-        int b = a%2;
-
-        switch (b){
+        switch (a%2){
             case 0: System.out.print(a);System.out.print(" ");System.out.println("genap");break;
             default: System.out.print(a);System.out.print(" ");System.out.println("ganjil");break;
         }

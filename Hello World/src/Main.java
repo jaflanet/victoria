@@ -40,8 +40,7 @@ public class Main {
 //        System.out.println(dayName);
 //    }
 public static void main(String[] args) {
-    int c=17;
-
+    int c=8;
     int n=1;
     for (int i = 1; i <=c;i++){
        n*=i;

@@ -10,55 +10,43 @@ public class Main {
 //    }
 //    static String b,c;
 //
-//    static void checkNum(int a){
-//        String b,c;
-//
-//        if (a%2== 0) {
-//            b = "bilangan genap";
-//        }
-//        else {
-//            b = "bilangan ganjil";
-//        }
-//        if (a>50){
-//            c= "lebih besar dari 50";
-//        }
-//        else{
-//            c= "lebih kecil dari 50";
-//        }
-//        System.out.print(a);
-//        System.out.print(" ");
-//        System.out.print(b);
-//        System.out.print(" ");
-//        System.out.print(c);
-//
-//    }
+    static void checkNum(int a){
 
-    static void checkDay(int day) {
-        String dayName;
-        switch (day) {
-            case 1:
-                dayName = "Sunday";
-                break;
-            case 2:
-                dayName = "Monday";
-                break;
-            case 3:
-                dayName = "Tuesday";
-                break;
-            default:
-                dayName = "Invalid day";
-                break;
+        int b = a%2;
+
+        switch (b){
+            case 0: System.out.print(a);System.out.print(" ");System.out.println("genap");break;
+            default: System.out.print(a);System.out.print(" ");System.out.println("ganjil");break;
         }
-        System.out.print(day);
-        System.out.print(" is ");
-        System.out.println(dayName);
+
     }
+
+//    static void checkDay(int day) {
+//        String dayName;
+//        switch (day) {
+//            case 1:
+//                dayName = "Sunday";
+//                break;
+//            case 2:
+//                dayName = "Monday";
+//                break;
+//            case 3:
+//                dayName = "Tuesday";
+//                break;
+//            default:
+//                dayName = "Invalid day";
+//                break;
+//        }
+//        System.out.print(day);
+//        System.out.print(" is ");
+//        System.out.println(dayName);
+//    }
 
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 5};
+        int[] arr = {10,75,76,47};
         for (int i = 0; i < arr.length; i++) {
-            checkDay(arr[i]);
+            checkNum(arr[i]);
         }
     }
 }

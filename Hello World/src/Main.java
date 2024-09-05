@@ -8,37 +8,61 @@ public class Main {
 //        float l =r*r*phi;
 //        return l;
 //    }
-    static String b,c;
+//    static String b,c;
+//
+//    static void checkNum(int a){
+//        String b,c;
+//
+//        if (a%2== 0) {
+//            b = "bilangan genap";
+//        }
+//        else {
+//            b = "bilangan ganjil";
+//        }
+//        if (a>50){
+//            c= "lebih besar dari 50";
+//        }
+//        else{
+//            c= "lebih kecil dari 50";
+//        }
+//        System.out.print(a);
+//        System.out.print(" ");
+//        System.out.print(b);
+//        System.out.print(" ");
+//        System.out.print(c);
+//
+//    }
 
-    static void checkNum(int a){
-        String b,c;
-
-        if (a%2== 0) {
-            b = "bilangan genap";
+    static void checkDay(int day) {
+        String dayName;
+        switch (day) {
+            case 1:
+                dayName = "Sunday";
+                break;
+            case 2:
+                dayName = "Monday";
+                break;
+            case 3:
+                dayName = "Tuesday";
+                break;
+            default:
+                dayName = "Invalid day";
+                break;
         }
-        else {
-            b = "bilangan ganjil";
-        }
-        if (a>50){
-            c= "lebih besar dari 50";
-        }
-        else{
-            c= "lebih kecil dari 50";
-        }
-        System.out.print(a);
-        System.out.print(" ");
-        System.out.print(b);
-        System.out.print(" ");
-        System.out.print(c);
-
+        System.out.print(day);
+        System.out.print(" is ");
+        System.out.println(dayName);
     }
 
+
     public static void main(String[] args) {
-        int[] arr = {10,75,76,47};
+        int[] arr = {1, 2, 3, 5};
         for (int i = 0; i < arr.length; i++) {
-            checkNum(arr[i]);
-            System.out.println(" ");
+            checkDay(arr[i]);
         }
+    }
+}
+
 
 //        r=10f;
 //        l1=luas(r);
@@ -71,7 +95,6 @@ public class Main {
 
 
 
-    }
-}
+
 
 

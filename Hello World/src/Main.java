@@ -42,14 +42,16 @@ public class Main {
 
 
     public static void main(String[] args) {
+        int i=1;
 
-        for (int i = 1; i <= 50; i++) {
+        while (i<=50) {
             if (i%2 == 0){
                 System.out.print(" even ");
             }
             else{
                 System.out.print(i);
             }
+            i++;
         }
     }
 }

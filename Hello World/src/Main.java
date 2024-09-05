@@ -8,16 +8,38 @@ public class Main {
 //        float l =r*r*phi;
 //        return l;
 //    }
+    static String b,c;
 
-    public static void main(String[] args) {
-        int a = 1;
+    static void checkNum(int a){
+        String b,c;
 
         if (a%2== 0) {
-            System.out.println("even");
+            b = "bilangan genap";
         }
         else {
-            System.out.println("odd");
+            b = "bilangan ganjil";
         }
+        if (a>50){
+            c= "lebih besar dari 50";
+        }
+        else{
+            c= "lebih kecil dari 50";
+        }
+        System.out.print(a);
+        System.out.print(" ");
+        System.out.print(b);
+        System.out.print(" ");
+        System.out.print(c);
+
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {10,75,76,47};
+        for (int i = 0; i < arr.length; i++) {
+            checkNum(arr[i]);
+            System.out.println(" ");
+        }
+
 //        r=10f;
 //        l1=luas(r);
 //        r= 15f;

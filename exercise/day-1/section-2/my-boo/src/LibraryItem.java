@@ -3,19 +3,24 @@ abstract class LibraryItem {
     protected String itemId;
     protected boolean isCheckedOut;
 
-    public void LibraryItem(String title,String itemId, boolean isCheckedOut){
+    public LibraryItem(String title,String itemId){
         this.title=title;
         this.itemId=itemId;
-        this.isCheckedOut=isCheckedOut;
+        this.isCheckedOut=false;
     }
 
-    public void checkOut(){
-
-
+    public void checkOut(){}
+    public void returnItem(){}
+    public void printDetails(){}
+    public String getItemId() {
+        return itemId;
     }
-    public void returnItem(){
 
+    public String getTitle() {
+        return title;
     }
-    public void printDetails(){
+
+    public boolean isCheckedOut() {
+        return isCheckedOut;
     }
 }

@@ -3,10 +3,10 @@ public class DVD extends LibraryItem{
     private int duration;
 
 
-    public DVD(String title, String itemId, String author, int pages) {
+    public DVD(String title, String itemId, String author, int duration) {
         super(title, itemId);
         this.director = author;
-        this.duration = pages;
+        this.duration = duration;
     }
 
     @Override

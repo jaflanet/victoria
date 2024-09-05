@@ -13,23 +13,31 @@ public class Book extends LibraryItem{
     public void checkOut(){
         if(!isCheckedOut){
             isCheckedOut=true;
+            System.out.println(title+"checked out");
+        }else{
+            System.out.println(title+"already checked out");
         }
+
     }
 
     @Override
     public void returnItem(){
         if(isCheckedOut){
             isCheckedOut=false;
+            System.out.println(title+"return");
+        }
+        else{
+            System.out.println(title+"not checked out");
         }
     }
 
     @Override
     public void printDetails(){
         System.out.println(" ");
-        System.out.println("Book Title : " + title);
-        System.out.println("Author : " + author);
-        System.out.println("Pages : " + pages );
-        System.out.println("Check Out :" + isCheckedOut);
+        System.out.print("Book Title : " + title);
+        System.out.print(" | Author : " + author);
+        System.out.print(" | Pages : " + pages );
+        System.out.print(" | Check Out :" + isCheckedOut);
     }
 
 }

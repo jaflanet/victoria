@@ -10,15 +10,12 @@ abstract class LibraryItem {
     }
 
     public void checkOut(){
-        this.isCheckedOut=true;
+
 
     }
     public void returnItem(){
-        this.isCheckedOut=false;
+
     }
     public void printDetails(){
-        System.out.println(this.title);
-        System.out.println(this.itemId);
-        System.out.println(this.isCheckedOut);
     }
 }

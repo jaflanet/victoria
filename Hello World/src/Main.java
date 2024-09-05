@@ -14,8 +14,8 @@ public class Main {
         num2= 2;
         num3= 3.4F ;
         num4= 3.5;
-        car1 = a;
-        is1 = True;
+        car1 = 'a';
+        is1 = true;
 
 
 
@@ -24,6 +24,7 @@ public class Main {
         System.out.println(num3);
         System.out.println(num4);
         System.out.println(car1);
+        System.out.println(is1);
 
     }
 }

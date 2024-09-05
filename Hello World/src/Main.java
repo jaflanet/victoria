@@ -40,13 +40,13 @@ public class Main {
 //        System.out.println(dayName);
 //    }
 public static void main(String[] args) {
-    for (int i = 1; i <=30;i++){
-        if (i%2==0){
-            continue;
-        }
-        System.out.print(" ");
-        System.out.print( i );
+    int c=17;
+
+    int n=1;
+    for (int i = 1; i <=c;i++){
+       n*=i;
     }
+    System.out.print( n );
 }
 
 //    public static void main(String[] args) {

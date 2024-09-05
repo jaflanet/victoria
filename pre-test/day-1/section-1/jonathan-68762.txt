@@ -1,0 +1,31 @@
+1.c
+2.b
+3.A
+4.b
+5.b
+6.C 
+7.D
+8.B 
+9. C 
+10. A
+11. True
+12. True
+13. True
+14. False
+15. False
+16. 
+17. equals for comparing data type, == for checkis the value is the same
+18. public class Main {
+    public static void main(String[] args) {
+        int a = 1;
+
+        if (a % 2 == 0) {
+            System.out.println("even");
+        }
+        else {
+            System.out.println("odd");
+        }
+    }
+}
+19. while, do-while,for
+20. this digunakan untuk mengakses variable yang tipenya private

@@ -10,14 +10,14 @@ public class Main {
 //    }
 //    static String b,c;
 //
-    static void checkNum(int a){
-
-        switch (a%2){
-            case 0: System.out.print(a);System.out.print(" ");System.out.println("genap");break;
-            default: System.out.print(a);System.out.print(" ");System.out.println("ganjil");break;
-        }
-
-    }
+//    static void checkNum(int a){
+//
+//        switch (a%2){
+//            case 0: System.out.print(a);System.out.print(" ");System.out.println("genap");break;
+//            default: System.out.print(a);System.out.print(" ");System.out.println("ganjil");break;
+//        }
+//
+//    }
 
 //    static void checkDay(int day) {
 //        String dayName;
@@ -42,9 +42,14 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int[] arr = {10,75,76,47};
-        for (int i = 0; i < arr.length; i++) {
-            checkNum(arr[i]);
+
+        for (int i = 1; i <= 50; i++) {
+            if (i%2 == 0){
+                System.out.print(" even ");
+            }
+            else{
+                System.out.print(i);
+            }
         }
     }
 }

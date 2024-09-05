@@ -17,8 +17,6 @@ public class Main {
         car1 = 'a';
         is1 = true;
 
-
-
         System.out.println(num1);
         System.out.println(num2);
         System.out.println(num3);

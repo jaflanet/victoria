@@ -1,0 +1,23 @@
+1.C
+2.B
+3.D
+4.B
+5.B
+6.A
+7.D
+8.C
+9.D
+10.A
+
+11.FALSE
+12.TRUE
+13.TRUE
+14.TRUE
+15.FALSE
+
+16. Polymorphism is a class in java that can be use as a single unit
+17. different between class and interface is class is mutable and interfance is imutable
+18. x
+19. x
+20. x
+

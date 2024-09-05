@@ -13,9 +13,9 @@ public class Book extends LibraryItem{
     public void checkOut(){
         if(!isCheckedOut){
             isCheckedOut=true;
-            System.out.println(title+"checked out");
+            System.out.println("\n"+title+" checked out");
         }else{
-            System.out.println(title+"already checked out");
+            System.out.println("\n"+title+" already checked out");
         }
 
     }
@@ -24,10 +24,10 @@ public class Book extends LibraryItem{
     public void returnItem(){
         if(isCheckedOut){
             isCheckedOut=false;
-            System.out.println(title+"return");
+            System.out.println("\n"+title+" return");
         }
         else{
-            System.out.println(title+"not checked out");
+            System.out.println("\n"+title+" not checked out");
         }
     }
 

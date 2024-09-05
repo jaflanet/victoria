@@ -14,29 +14,29 @@ public class Main {
         library.addItem(dvd1);
         library.addItem(dvd2);
 
-//        System.out.println("\nAll items:");
-//        library.listAllItems();
+        System.out.println("\nAll items:");
+        library.listAllItems();
 
 
         library.checkOutItem("B1");
         library.checkOutItem("D1");
         System.out.println("\nafter checkout:");
         library.listAllItems();
-//
-//
-//        library.returnItem("B1");
-//        library.returnItem("D1");
-//        System.out.println("\nafter return:");
-//        library.listAllItems();
-//
-//        System.out.println("\nSearch by title:");
-//        LibraryItem searchedItem = library.searchByTitle("doraemon");
-//        if (searchedItem != null) {
-//            searchedItem.printDetails();
-//        }
-//
-//        library.removeItem("B1");
-//        System.out.println("\nAll items in the library after remove:");
-//        library.listAllItems();
+
+
+        library.returnItem("B1");
+        library.returnItem("D1");
+        System.out.println("\nafter return:");
+        library.listAllItems();
+
+        System.out.println("\nSearch by title:");
+        LibraryItem searchedItem = library.searchByTitle("doraemon");
+        if (searchedItem != null) {
+            searchedItem.printDetails();
+        }
+
+        library.removeItem("B1");
+        System.out.println("\nafter remove:");
+        library.listAllItems();
     }
 }

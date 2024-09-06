@@ -1,0 +1,70 @@
+1. B 
+2. B
+3. A
+4. B
+5. C
+6. B
+7. B
+8. B
+9. A
+10.B
+
+1. False
+2. False
+3. True
+4. False
+5. True
+
+1. RESTful api architecture is simplified a frontend 
+to connect with the backend. RESTful api gif the scalability
+readeabilty, it stateless so all information that send throught
+this api must be usefull, and http can connect easily
+
+2. GET use for get data from the backend or server
+    POST use for send data to be save to the server
+    PUT use for updating exsisting data in the server
+    DELETE use for removing data in the server
+
+3. SPRINGBOOT already have the default configuration to
+handle RESTful api
+
+4. request mapping is a a methods to get to the class that we want
+
+5. 200 = response ok to check is the connection is establish
+and request can be handled 
+201 = created - to send response when a resource is created
+400 = bad request-when the request that send cant be handled 
+by server
+404 = not found - when the request is not in the server
+500 = server error - when the server cant be accessed
+
+6. springboot have a default configuration to hanled an input
+with methods called validation so the input cant be empty
+
+7. IOC dibuat dengan menggunakan container pada spring, kemudian dilakukan
+konfigurasi pada metadata , ketika meta data dipaca oleh aplikasi
+kemudian objek akan dibaca
+
+8. request body dilakukan untuk membaca isi dari request kemudian
+response body dilakukan untuk mengambil response dari request
+
+9. springboot manage this with api jackson and it will do the task
+automatically with the fucntion in the api
+
+10. exception handling prevent a bad request read by api and
+error in the server so client will know the error and can generat an
+automatically respon error
+
+11. CORS is the security to check the input http methods
+
+12. spring security handel http request so it prevent to get
+sensitive data from the server
+
+13. statelessnes make RESTful is more secure and scalable 
+because the request must have important information
+
+14. postman use for connect the endpoint and test the http methods
+like get and post put and DELETE
+
+15. integration test is testing all the component unit test just
+one component

@@ -1,0 +1,47 @@
+
+URI: /GET/Asset
+Method: GET
+response:
+{
+    "id": String
+    "name" : String
+    "balance" : Float
+    "car": String,
+}
+
+URI:/POST/Asset
+Method: POST
+requset:{
+    "id": String
+    "name" : String
+    "balance" : Float
+    "car": String,
+}
+response:
+{
+    "id":
+    message:"insert success"
+}
+--
+
+URI:/PUT/:id
+Method:PUT
+requset:{
+    "id": String
+    "name": String
+}
+response:
+{
+    "id":
+    message:"update success"
+}
+
+URI:/DELETE/:id
+Method:DELETE
+requset:{
+    "id":String
+}
+response:
+{
+    message:"delete success"
+}

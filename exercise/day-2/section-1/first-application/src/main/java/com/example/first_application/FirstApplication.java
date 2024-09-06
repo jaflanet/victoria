@@ -1,12 +1,15 @@
 package com.example.first_application;
 
+import com.example.first_application.request.CreateUserRequest;
+import com.example.first_application.request.EmployeeUserRequest;
+import com.example.first_application.response.CreateEmployeeResponse;
+import com.example.first_application.response.CreateUserResponse;
 import com.example.first_application.response.GetAssetResponse;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,10 +79,10 @@ public class FirstApplication {
 //		return"hello world";
 //	}
 
-	@GetMapping("/users")
-	public List<String> getUser(){
-		return List.of("simon","petrus","andreas");
-	}
+//	@GetMapping("/users")
+//	public List<String> getUser(){
+//		return List.of("simon","petrus","andreas");
+//	}
 
 	@GetMapping("/calculator/add")
 	public String getAdd(
@@ -90,4 +93,64 @@ public class FirstApplication {
 	{
 		return String.valueOf(panjang+lebar);
 	}
+
+	@PostMapping("/users")
+	public ResponseEntity<List<CreateUserResponse>>createUser(
+			@RequestBody CreateUserRequest request){
+
+		List<CreateUserResponse> users = new ArrayList<>();
+
+		users.add(CreateUserResponse.builder().id(1l).name("AB").build());
+		users.add(CreateUserResponse.builder().id(4l).name("CD").build());
+
+		// add new user
+		users.add(CreateUserResponse.builder().id(request.getId()).name(request.getName()).build());
+
+		return new ResponseEntity<>(users, HttpStatus.OK);
+
+	}
+
+	@PostMapping("/employee")
+	public ResponseEntity<List<CreateEmployeeResponse>> createEmployee(
+			@RequestBody EmployeeUserRequest request) {
+
+		List<CreateEmployeeResponse> employees = new ArrayList<>();
+
+
+		employees.add(CreateEmployeeResponse.builder()
+				.id(1L)
+				.name("AB")
+				.age(20)
+				.address("rumah")
+				.phone("0878")
+				.build());
+		employees.add(CreateEmployeeResponse.builder()
+				.id(2L)
+				.name("CD")
+				.age(21)
+				.address("rumah2")
+				.phone("0877")
+				.build());
+
+
+		if (request.getName() != null && request.getAge() > 0 && request.getPhone() != null) {
+			employees.add(CreateEmployeeResponse.builder()
+					.id(generateUniqueId(employees))
+					.name(request.getName())
+					.age(request.getAge())
+					.address(request.getAddress())
+					.phone(request.getPhone())
+					.build());
+			return new ResponseEntity<>(employees, HttpStatus.OK);
+		}
+
+		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+	}
+
+	private Long generateUniqueId(List<CreateEmployeeResponse> employees) {
+		long lastEmployee = employees.get(employees.size() - 1).getId();
+		return lastEmployee + 1;
+	}
+
+
 }

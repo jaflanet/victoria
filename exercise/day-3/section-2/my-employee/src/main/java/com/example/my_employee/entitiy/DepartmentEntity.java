@@ -21,12 +21,13 @@ public class DepartmentEntity {
     @JsonProperty("name")
     private String name;
 
-    @OneToOne
-    @JoinColumn(name = "manager_id", referencedColumnName = "id")
+//    @OneToOne
+//    @JoinColumn(name = "manager_id", referencedColumnName = "id")
+    @Column
     @JsonProperty("manager")
     private EmployeeEntity manager;
 
-//    @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
-//    private List<EmployeeEntity> employees;
+    @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
+    private List<EmployeeEntity> employees;
 
 }

@@ -19,6 +19,4 @@ public interface EmployeeRepository extends JpaRepository<EmployeeEntity, Long> 
     Page<EmployeeEntity> findAll(Pageable pageable);
 
 
-
-
 }

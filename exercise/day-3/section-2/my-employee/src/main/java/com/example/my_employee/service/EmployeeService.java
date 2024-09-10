@@ -13,7 +13,7 @@ import java.util.List;
 public interface EmployeeService {
 
 
-    List<EmployeeEntity> getAllEmployees();
+  List<EmployeeEntity> getAllEmployees();
 
   EmployeeEntity getEmployeeById(Long id) ;
 

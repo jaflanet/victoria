@@ -1,0 +1,52 @@
+1. B 
+2. A
+3. B
+4. A
+5. A
+6. A
+7. B
+8. B
+9. A
+10.D
+
+11. JWT token availible for 15 minutes and after that
+it will generate a new token 
+
+12. password encryption user for security so when users
+submit their passwordit will read as a encrypted text, bcrypt
+user for hashing password in spring 
+
+13. Oauth2 login can be implented in login method at spring so
+user can use their account from another website to login in
+
+14. OAuth2 authorization server  allow user the share data between
+application but maintain the sensitive information private
+
+15. CORS maintainto a domain can connect to another domain 
+resource 
+
+16. CORS usually used in controller class and method , 
+overiding cors registry and configure it using http server
+
+17. an attack that permits attacker to hijack a user session,
+spring by default doesnt read the httpsession again and have 
+their own SessionAuthenticationStrategy
+
+18. Stateful applications save client session data 
+on the server for quicker processing and historical context.
+Stateless apps, on the other hand, 
+rely on externalized state data rather than 
+saving client session data on the server.
+
+19. phishing, ransomware, 
+Structured Query Language (SQL) injection, 
+cross-site scripting (XSS), 
+distributed denial-of-service (DDoS) attacks, 
+viruses, worms, and spyware.
+to be avoided need a proper security method in the web
+application and not using a web that not in https 
+
+20. condact regular security audit 
+helps automate and streamline the process 
+of analyzing your network for access control issues.
+tools to help do this ting can be metasploit

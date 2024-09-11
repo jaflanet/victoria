@@ -1,0 +1,62 @@
+1. B 
+2. A
+3. D 
+4. D
+5. D
+
+6. F
+7. T
+8. T
+9. T
+10. T
+
+11. Handling HTTP request and return the respond
+
+12. Service layer have the business function and repository layer use
+for mechanism in get,post,update, and delete object so service layer
+need the repository mechanism feature
+
+13. 
+- controller is the folder where api give the function,so when the request
+is given, they give it in controller layer
+- repository layer is the mechanism that handle the delete,post,update, and
+get the data from database,
+- service layer is the layer where the business function located
+
+14. repository layer have the mechanism to update,delete,get, and post to database
+so data can be accessed
+
+15. implicit casting automatically convert data types when the bit to be convert is bigger
+explicit casting need instruction to be coded 
+
+16. configuration start with extract the jwt token
+check is the token is validate then check the expired, if its expired
+generate new token.
+
+17. 
+String str = "23.56";
+Double num = Double.valueOf(str);
+
+18. check wether the values given is equal or not 
+
+19. Create the username,password and role , and than give the authority
+
+20. services class should be in service layer in implementation sub folder
+so the functio will be availible at the interface file. the annotaion is @service
+
+21. service layer have all the business function, so the code and logical to
+processing all the data must be in service layer
+
+22. create the entity, repository and service class, and then create 
+the non parameterized service unit test, then create the parameterized with imput from csv
+
+23. request mapping us for set the http response, and location,
+request mapping have the get, update,post, and delete method
+
+24. the integration can be tested by see is the data can be accesed by
+the function in service layer, accesed and process like get the data
+delete, create, and update
+
+25. use @ControllerAdvice annoation so you can handle global exception through all
+controller, use @ResponseStatus to see the respond and show the exception , 
+and @exceptionHandler to have exception in one controler files
